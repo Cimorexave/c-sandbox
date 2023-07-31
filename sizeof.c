@@ -21,4 +21,13 @@ void main()
     printf("the size of float: %zu \n", sizeof(my_float));   // 4
     printf("the size of double: %zu \n", sizeof(my_double)); // 8
     printf("the size of char: %zu \n", sizeof(my_char));     // 1
+
+    struct Person
+    {
+        int age;
+        int *age;
+        char name[];
+    };
+
+    // printf("the size of struct %s", Person);
 }
