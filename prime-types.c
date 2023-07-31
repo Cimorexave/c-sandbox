@@ -31,4 +31,15 @@ void main()
     // printf("the sum of 2 and 5 is %i \n", add2_f(2.0, 5.0));
 
     // printf("the sum of 2 and 5 is %i \n", add2_d(2, 5));
+
+    // printf("%i", 2.0 + 5.0);
+
+    float sum = 2.0 + 5.0;
+
+    // printf("%f", 2.0 + 5.0);
+    // printf("%f", sum);
+
+    // printf("%d", sum);
+
+    printf("%zu", sizeof(sum));
 }
