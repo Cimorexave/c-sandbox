@@ -10,6 +10,7 @@ int length(int *arr)
     {
         if (arr[i] == 0)
             condition = false;
+        printf("arr[i]: %i\n", arr[i]);
         i++;
     }
 
@@ -22,7 +23,7 @@ int main()
 
     int *p = numbers;
 
-    printf("length of numbers: %i\n", length(numbers));
+    printf("length of numbers: %i\n", length(p));
 
     return 0;
 }
