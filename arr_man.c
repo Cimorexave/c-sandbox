@@ -17,13 +17,26 @@ int length(int *arr)
     return i;
 }
 
+size_t length_arr(int *arr)
+{
+    size_t length = 0;
+
+    while (arr[length] != 0)
+    {
+        length++;
+    }
+
+    return length;
+}
+
 int main()
 {
     int numbers[5] = {1, 2, 3, 4, 5};
 
     int *p = numbers;
 
-    printf("length of numbers: %i\n", length(p));
+    // printf("length of numbers: %i\n", length(p));
+    printf("length of numbers: %zu\n", length_arr(numbers));
 
     return 0;
 }
