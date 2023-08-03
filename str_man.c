@@ -1,16 +1,27 @@
 #include <stdio.h>
+#include <stdbool.h>
 
-char[] str_clear(char[] * str)
+int str_length(char *str)
 {
-    return *str = [];
+    bool condition = true;
+    int i = 0;
+
+    while (condition)
+    {
+        if (str[i] == 0)
+            condition = false;
+        i++;
+    }
+
+    return i;
 }
 
-void main()
+int main()
 {
-    char my_str[10];
-    my_str = "hello there";
 
-    printf("");
+    char *my_str = "Hello There";
 
-    return;
+    printf("the string \"%c\"'s length is: %i\n", *my_str, str_length(my_str));
+
+    return 0;
 }
