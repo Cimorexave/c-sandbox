@@ -55,6 +55,8 @@ char *concat_str(char *first, char *second)
 
     // printf("result is %s", result);
     // printf("result_p is %s", result_p);
+    printf("result_p is: %p\n", result_p); // 0061FE62
+    printf("result_p is: %s\n", result_p); // hey there
 
     return result_p;
 }
@@ -73,11 +75,23 @@ int main()
     // copy_str(my_str2, my_str2_copy);
     // printf("copy of my_str2: %s is: %s\n", my_str2, my_str2_copy);
 
+    // char *str = "a string";
+    // printf("%s\n", str);
+
     char *str1 = "hey ";
     char *str2 = "there!";
 
-    // char *concats = concat_str(str1, str2);
-    printf("concatenated result is: %s\n", concat_str(str1, str2));
+    char *concats = concat_str(str1, str2);
+    // printf("length of concat result: %d\n", strlen(concats));
+    // printf("sizeof of concat result: %zu\n", sizeof(concats));
+
+    // for (int i = 0; i < strlen(concats); i++)
+    // {
+    //     printf("%c", concats[i]);
+    // }
+
+    printf("concatenated result is: %p\n", concats); // 0061FE62
+    printf("concatenated result is: %s\n", concats); // a
 
     return 0;
 }
