@@ -81,7 +81,9 @@ int main()
     char *str1 = "hey ";
     char *str2 = "there!";
 
-    char *concats = concat_str(str1, str2);
+    char emp[50];
+    char *concats = emp;
+    concats = concat_str(str1, str2);
     // printf("length of concat result: %d\n", strlen(concats));
     // printf("sizeof of concat result: %zu\n", sizeof(concats));
 
