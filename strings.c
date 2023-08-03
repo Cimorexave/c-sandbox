@@ -4,9 +4,11 @@ int main()
 {
     char name[] = "sina sadeqi";
     char *name_p = name;
+    char *name_pel = &name[0];
 
     printf("name is: %s\n", name);
-    printf("*name_p is: %s\n", *name_p);
+    printf("name_p is: %s\n", name_p);
+    printf("name_pel is: %s\n", name_pel);
     // printf("name_p value is: %s\n", *name_p);
 
     printf("firs char of name address is: %p\n", &name);
