@@ -2,3 +2,8 @@
 .vscode/
 # binary files
 bin/
+
+# executables
+*.exe
+*.o
+*.h
