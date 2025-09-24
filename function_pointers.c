@@ -27,6 +27,7 @@ int main() {
     void  (*fptr)();
     printf("fptr: %p\n", fptr);
     fptr = &f1;
+     /* OR: */fptr = f1;
     printf("fptr after assignment: %p\n", fptr);
 
     return 0;
